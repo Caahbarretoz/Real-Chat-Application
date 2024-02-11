@@ -1,0 +1,76 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/purple-circle.jpg') center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.div_input {
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    
+}
+
+.div_input input {
+    position: relative;
+    background-color: #d6d6d642;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    height: 6%;
+    color: #fff;
+    margin-bottom: auto;
+    bottom: 35px;
+}
+
+.div_input input::placeholder {
+    position: relative;
+    color: #999;
+    padding-left: 10px;
+}
+
+.div_input p {
+    position: relative;
+    font-size: larger;
+    color: white;
+    margin-bottom: auto;
+}
+
+.div_input h1 {
+    position: relative;
+    color: #fff;
+    margin-bottom: auto;
+}
+
+.div_input button {
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff00d448;
+    width: 35%;
+    height: 7%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: auto;
+    cursor: pointer;
+    bottom: 20px;
+}
