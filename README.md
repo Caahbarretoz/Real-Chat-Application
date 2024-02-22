@@ -3,5 +3,5 @@ Ps: to run this project is necessary to install express framework.
 Then run 'node servidor.cjs' in the terminal.
 
 <div align="center">
-    <img src="./public/assets/chat.gif" width="800">
+    <img src="./public/assets/chat.gif" width="700">
 </div>
