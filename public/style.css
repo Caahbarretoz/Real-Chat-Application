@@ -21,11 +21,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to bottom, #a39ea3, #171718);
 }
 
 header {
+  z-index: 2;
   font-family: 'Trench';
-  background-color: #040e29;
+  background: linear-gradient(to right, #a39ea3, #171718);
   color: #fff;
   width: 100%;
   display: flex;
@@ -52,14 +54,17 @@ main {
   justify-content: flex-start;
   align-items: center;
   min-height: 75%;
-  background-color: #eaeaea;
+  background: #0000006e;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+  border-radius: 10px;
   flex-grow: 1;
   width: 100%;
   font-size: 0.9rem;
 }
 
 .mensagem {
-  background-color: #040e29;
+  background-color: #686568;
   color: #fff;
   width: 85%;
   margin: 1rem 0.5rem;
@@ -68,11 +73,11 @@ main {
 }
 
 #mensagens > .mensagem:last-of-type {
-  background-color: #FF007A;
+  background-color:  #909091;
 }
 
 .mensagem2 {
-  background-color: #FF007A;
+  background-color:  #909091;
   color: #fff;
   width: 85%;
   margin: 1rem 0.5rem;
@@ -81,6 +86,7 @@ main {
 }
 
 #envio-mensagens {
+  z-index: 2;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   display: flex;
@@ -90,22 +96,28 @@ main {
   & > input {
     flex-grow: 1;
     padding: 0.5rem 0.3rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #02020298;
+    color: #fff;
   }
   & > button {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: #040e29;
+    background: linear-gradient(to right, #5a5a5c, #a39ea3, #a39ea3, #5a5a5c);
     color: #fff;
     padding: 0.8rem;
     border: none;
     border-radius: 12px;
     margin-left: 0.5rem;
-    &:hover {
-      background-color: #FF007A;
-    }
   }
+}
+
+#envio-mensagens button:hover {
+  background: linear-gradient(to right, #d1cfcf, #fff, #fff, #d1cfcf);
+  color: #000;
 }
 
 @media (max-width: 500px) {

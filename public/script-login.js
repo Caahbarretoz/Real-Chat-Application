@@ -1,7 +1,9 @@
 const button = document.getElementById('button')
 
+const ipv4 = '192.168.15.95'
+
 function direcionar() {
-    window.location.href = `http://192.168.15.77:1000/index.html`;
+    window.location.href = `http://${ipv4}:1000/index.html`;
 }
 
 function salvarConteudo() {

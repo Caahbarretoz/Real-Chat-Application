@@ -16,7 +16,7 @@ io.addListener('connection', (socket) => {
 
 app.use(express.static('public'));
 
-const ipv4 = '192.168.15.77'
+const ipv4 = '192.168.15.95'
 
 servidorHttp.listen(1000, ipv4, () => {
     console.log(`Endereço do servidor: ${ipv4}:1000/login.html`)
